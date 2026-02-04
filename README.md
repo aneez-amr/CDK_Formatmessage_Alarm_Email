@@ -1,14 +1,20 @@
-# Welcome to your CDK TypeScript project
+# Eventbridge Alarm Error (CDK Python)
 
-This is a blank project for CDK development with TypeScript.
+This project is now implemented in Python 3.13 using AWS CDK v2. The stack
+creates the SNS topic, CloudWatch alarm, and EventBridge rule that formats
+alarm metadata into a multiline notification before publishing to your email.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Setup
+
+1. Create/activate a Python 3.13 virtual environment (e.g., `python3.13 -m venv .venv`).
+2. Install CDK dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
 
 ## Useful commands
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+* `npx cdk synth`  emit the CloudFormation template
+* `npx cdk diff`   compare the deployed stack with the current definition
+* `npx cdk deploy` deploy the stack to your AWS account
+"# CDK_Formatmessage_Alarm_Email" 
